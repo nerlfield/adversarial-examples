@@ -14,6 +14,7 @@ The primary objective was to craft a function capable of taking any given image 
 The repository features two main notebooks:
 - `notebooks/00_adv_noise_exp_sandbox.ipynb`: This is a sandbox for various experimental approaches, including a noteworthy experiment with Patch-based attacks and GradCAM, which visualizes the significance of image features. For insights into this technique, refer to the notebook's end.
 - `notebooks/01_adv_noise_cleanup.ipynb`: This notebook showcases the creation of counterfactual examples that successfully trick the model into misclassifying images to a user-specified class. This method was validated using a subset of 50 images from the original ImageNet dataset, with all instances successfully deceiving the model.
+- `notebooks/02_fixed_01_adv_noise_cleanup.ipynb`: Fixed adversarial example fitting. The primary correction involved removing the clamp from the fitting image process, which was producing artifacts and preventing the images from being denormalized.
 
 ### Environment Setup Instructions
 
